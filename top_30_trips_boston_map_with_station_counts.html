@@ -1,0 +1,1703 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_343554ac4ebe5323a2bed608fa9df4ec {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-ant-path@1.1.2/dist/leaflet-ant-path.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_343554ac4ebe5323a2bed608fa9df4ec" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_343554ac4ebe5323a2bed608fa9df4ec = L.map(
+                "map_343554ac4ebe5323a2bed608fa9df4ec",
+                {
+                    center: [42.36, -71.05],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1c115349933df728c3b13e1e996aaef1 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_1c115349933df728c3b13e1e996aaef1.addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            ant_path_174acc05ab23e82129b459ec3339aed6 = L.polyline.antPath(
+              [[42.331184, -71.095171], [42.3362444479687, -71.0879856348037]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            ant_path_174acc05ab23e82129b459ec3339aed6.bindTooltip(
+                `<div>
+                     roxbury crossing t stop - columbus ave at tremont st → ruggles t stop - columbus ave at melnea cass blvd<br>6506 trajets
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            ant_path_7042af3fc48a9f8ef23e5227103a7942 = L.polyline.antPath(
+              [[42.3362444479687, -71.0879856348037], [42.331184, -71.095171]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            ant_path_7042af3fc48a9f8ef23e5227103a7942.bindTooltip(
+                `<div>
+                     ruggles t stop - columbus ave at melnea cass blvd → roxbury crossing t stop - columbus ave at tremont st<br>6329 trajets
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            ant_path_adedf90c24205ceaadf49c2f71a95cd8 = L.polyline.antPath(
+              [[42.350406, -71.108279], [42.3516920188597, -71.1190348863601]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            ant_path_adedf90c24205ceaadf49c2f71a95cd8.bindTooltip(
+                `<div>
+                     b.u. central - 725 comm. ave. → commonwealth ave at agganis way<br>5075 trajets
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            ant_path_f7c503648b863bb9d5bdbf4ddd884354 = L.polyline.antPath(
+              [[42.3516920188597, -71.1190348863601], [42.352261, -71.123831]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            ant_path_f7c503648b863bb9d5bdbf4ddd884354.bindTooltip(
+                `<div>
+                     commonwealth ave at agganis way → packard's corner - commonwealth ave at brighton ave<br>4926 trajets
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            ant_path_b412c1919db4bf0f3e8c6d4a38318bab = L.polyline.antPath(
+              [[42.349243769553, -71.0972820969254], [42.3516920188597, -71.1190348863601]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            ant_path_b412c1919db4bf0f3e8c6d4a38318bab.bindTooltip(
+                `<div>
+                     deerfield st at commonwealth ave → commonwealth ave at agganis way<br>4480 trajets
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            ant_path_385042aa793d4c6bbcbaf67aca698892 = L.polyline.antPath(
+              [[42.350406, -71.108279], [42.352261, -71.123831]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            ant_path_385042aa793d4c6bbcbaf67aca698892.bindTooltip(
+                `<div>
+                     b.u. central - 725 comm. ave. → packard's corner - commonwealth ave at brighton ave<br>4453 trajets
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            ant_path_00d3a5afdc9816ce1a4ae84573bddfe3 = L.polyline.antPath(
+              [[42.3516920188597, -71.1190348863601], [42.3496094533305, -71.1039152369812]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            ant_path_00d3a5afdc9816ce1a4ae84573bddfe3.bindTooltip(
+                `<div>
+                     commonwealth ave at agganis way → 700 commonwealth ave.<br>4322 trajets
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            ant_path_2bbbe17ec184c27d3748e05f4a2d6b7c = L.polyline.antPath(
+              [[42.3531780918625, -71.0481735692337], [42.363871, -71.050877]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            ant_path_2bbbe17ec184c27d3748e05f4a2d6b7c.bindTooltip(
+                `<div>
+                     seaport blvd at sleeper st → lewis wharf at atlantic ave<br>3833 trajets
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            ant_path_14ac06f184e3d82b424a94a4da7dd70a = L.polyline.antPath(
+              [[42.34949599514, -71.1005759239196], [42.3516920188597, -71.1190348863601]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            ant_path_14ac06f184e3d82b424a94a4da7dd70a.bindTooltip(
+                `<div>
+                     silber way → commonwealth ave at agganis way<br>3799 trajets
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            ant_path_625e6c37fec16cb7581d6e088c67e422 = L.polyline.antPath(
+              [[42.3516920188597, -71.1190348863601], [42.350406, -71.108279]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            ant_path_625e6c37fec16cb7581d6e088c67e422.bindTooltip(
+                `<div>
+                     commonwealth ave at agganis way → b.u. central - 725 comm. ave.<br>3797 trajets
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            ant_path_224f4ce9f0b1aa017df77fe70511f922 = L.polyline.antPath(
+              [[42.349243769553, -71.0972820969254], [42.350406, -71.108279]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            ant_path_224f4ce9f0b1aa017df77fe70511f922.bindTooltip(
+                `<div>
+                     deerfield st at commonwealth ave → b.u. central - 725 comm. ave.<br>3745 trajets
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            ant_path_d5b80279f469526df92d7af67614d982 = L.polyline.antPath(
+              [[42.3516920188597, -71.1190348863601], [42.349243769553, -71.0972820969254]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            ant_path_d5b80279f469526df92d7af67614d982.bindTooltip(
+                `<div>
+                     commonwealth ave at agganis way → deerfield st at commonwealth ave<br>3694 trajets
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            ant_path_f433e86db57bb68767f9be06af044b2d = L.polyline.antPath(
+              [[42.3531780918625, -71.0481735692337], [42.362811, -71.056067]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            ant_path_f433e86db57bb68767f9be06af044b2d.bindTooltip(
+                `<div>
+                     seaport blvd at sleeper st → cross st at hanover st<br>3652 trajets
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            ant_path_269021a9a1a14af6a216a9df0f0041d2 = L.polyline.antPath(
+              [[42.363871, -71.050877], [42.3531780918625, -71.0481735692337]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            ant_path_269021a9a1a14af6a216a9df0f0041d2.bindTooltip(
+                `<div>
+                     lewis wharf at atlantic ave → seaport blvd at sleeper st<br>3456 trajets
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            ant_path_0ded91ede4604507426f93f2e8011b1f = L.polyline.antPath(
+              [[42.352175, -71.055547], [42.363871, -71.050877]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            ant_path_0ded91ede4604507426f93f2e8011b1f.bindTooltip(
+                `<div>
+                     south station - 700 atlantic ave → lewis wharf at atlantic ave<br>3398 trajets
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            ant_path_60da26cfefe2cd00e68a2956f70158ab = L.polyline.antPath(
+              [[42.352261, -71.123831], [42.3516920188597, -71.1190348863601]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            ant_path_60da26cfefe2cd00e68a2956f70158ab.bindTooltip(
+                `<div>
+                     packard's corner - commonwealth ave at brighton ave → commonwealth ave at agganis way<br>3392 trajets
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            ant_path_a77102a6765da784d5267608c6de2420 = L.polyline.antPath(
+              [[42.3496094533305, -71.1039152369812], [42.3516920188597, -71.1190348863601]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            ant_path_a77102a6765da784d5267608c6de2420.bindTooltip(
+                `<div>
+                     700 commonwealth ave. → commonwealth ave at agganis way<br>3378 trajets
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            ant_path_e12850972a6762f9f6f04c06391e60af = L.polyline.antPath(
+              [[42.352261, -71.123831], [42.350406, -71.108279]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            ant_path_e12850972a6762f9f6f04c06391e60af.bindTooltip(
+                `<div>
+                     packard's corner - commonwealth ave at brighton ave → b.u. central - 725 comm. ave.<br>3371 trajets
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            ant_path_1e7421a7d63a7fb6e3ed436e8e98ccc5 = L.polyline.antPath(
+              [[42.3516920188597, -71.1190348863601], [42.34949599514, -71.1005759239196]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            ant_path_1e7421a7d63a7fb6e3ed436e8e98ccc5.bindTooltip(
+                `<div>
+                     commonwealth ave at agganis way → silber way<br>3168 trajets
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            ant_path_3f0b1e1aa1ee875bf6d32abe8eefd0ba = L.polyline.antPath(
+              [[42.3385146017859, -71.0740408301353], [42.3480741231743, -71.0765701532363]],
+              {"bubblingMouseEvents": true, "color": "blue", "dashArray": [10, 20], "dashOffset": null, "delay": 400, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "hardwareAcceleration": false, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "paused": false, "pulseColor": "#FFFFFF", "reverse": false, "smoothFactor": 1.0, "stroke": true, "weight": 5}
+        ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            ant_path_3f0b1e1aa1ee875bf6d32abe8eefd0ba.bindTooltip(
+                `<div>
+                     washington st at rutland st → back bay t stop - dartmouth st at stuart st<br>3089 trajets
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e0d3af2fedfc0759038d136c4039ced9 = L.marker(
+                [42.355536284897, -71.0728687047958],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_df21aaaf1ef34bea860134942ee131f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_e0d3af2fedfc0759038d136c4039ced9.setIcon(icon_df21aaaf1ef34bea860134942ee131f6);
+        
+    
+        var popup_43bd287d9d79e5fc5df499747110286a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ca247b9e951b179f3cebcc4815b02226 = $(`<div id="html_ca247b9e951b179f3cebcc4815b02226" style="width: 100.0%; height: 100.0%;">7734 trajets</div>`)[0];
+                popup_43bd287d9d79e5fc5df499747110286a.setContent(html_ca247b9e951b179f3cebcc4815b02226);
+            
+        
+
+        marker_e0d3af2fedfc0759038d136c4039ced9.bindPopup(popup_43bd287d9d79e5fc5df499747110286a)
+        ;
+
+        
+    
+    
+            var marker_44a62b88b577af530a2d7489b0102ad2 = L.marker(
+                [42.336448, -71.023739],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_84c47bc0c4aeb82eec9fbf6aa88cf021 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_44a62b88b577af530a2d7489b0102ad2.setIcon(icon_84c47bc0c4aeb82eec9fbf6aa88cf021);
+        
+    
+        var popup_c1f083960ccf7ae0752a54ed8365f59e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e5d5d88143bbffc5a37810b7b4b7658b = $(`<div id="html_e5d5d88143bbffc5a37810b7b4b7658b" style="width: 100.0%; height: 100.0%;">7259 trajets</div>`)[0];
+                popup_c1f083960ccf7ae0752a54ed8365f59e.setContent(html_e5d5d88143bbffc5a37810b7b4b7658b);
+            
+        
+
+        marker_44a62b88b577af530a2d7489b0102ad2.bindPopup(popup_c1f083960ccf7ae0752a54ed8365f59e)
+        ;
+
+        
+    
+    
+            var marker_8901815b9facfc8edfa7c120abbbdb5e = L.marker(
+                [42.331184, -71.095171],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_38b9a03210010e98c0bfcce1eec3ceec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_8901815b9facfc8edfa7c120abbbdb5e.setIcon(icon_38b9a03210010e98c0bfcce1eec3ceec);
+        
+    
+        var popup_2e8f2f009a594695739d57a635e1f012 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_81a40c1d66e28d24073912dc3da3dd7a = $(`<div id="html_81a40c1d66e28d24073912dc3da3dd7a" style="width: 100.0%; height: 100.0%;">Départ: 6506 trajets</div>`)[0];
+                popup_2e8f2f009a594695739d57a635e1f012.setContent(html_81a40c1d66e28d24073912dc3da3dd7a);
+            
+        
+
+        marker_8901815b9facfc8edfa7c120abbbdb5e.bindPopup(popup_2e8f2f009a594695739d57a635e1f012)
+        ;
+
+        
+    
+    
+            var marker_59bff89d73e15cdeb30f3c859238c223 = L.marker(
+                [42.3362444479687, -71.0879856348037],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_27389aee80ac2fd92e9c1593cb34ee1a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "stop", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_59bff89d73e15cdeb30f3c859238c223.setIcon(icon_27389aee80ac2fd92e9c1593cb34ee1a);
+        
+    
+        var popup_a015c99025aec14506b22baaec0dcb87 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_83cdd1f340a82e532d46e6363c2064c3 = $(`<div id="html_83cdd1f340a82e532d46e6363c2064c3" style="width: 100.0%; height: 100.0%;">Arrivée: 6506 trajets</div>`)[0];
+                popup_a015c99025aec14506b22baaec0dcb87.setContent(html_83cdd1f340a82e532d46e6363c2064c3);
+            
+        
+
+        marker_59bff89d73e15cdeb30f3c859238c223.bindPopup(popup_a015c99025aec14506b22baaec0dcb87)
+        ;
+
+        
+    
+    
+            var marker_e4921366fc7510279b9a107293f6ce27 = L.marker(
+                [42.3362444479687, -71.0879856348037],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_0dc179e23cb109b4cb53d393456e3de0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_e4921366fc7510279b9a107293f6ce27.setIcon(icon_0dc179e23cb109b4cb53d393456e3de0);
+        
+    
+        var popup_dfce301f1facf3126177558253f0504f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b90c2740f7b680d929fbb5eb4c68fdc8 = $(`<div id="html_b90c2740f7b680d929fbb5eb4c68fdc8" style="width: 100.0%; height: 100.0%;">Départ: 6329 trajets</div>`)[0];
+                popup_dfce301f1facf3126177558253f0504f.setContent(html_b90c2740f7b680d929fbb5eb4c68fdc8);
+            
+        
+
+        marker_e4921366fc7510279b9a107293f6ce27.bindPopup(popup_dfce301f1facf3126177558253f0504f)
+        ;
+
+        
+    
+    
+            var marker_a09914cd83e82c70f56fa8ee62925b55 = L.marker(
+                [42.331184, -71.095171],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_5a46b645312f80decd79493fee14bc32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "stop", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a09914cd83e82c70f56fa8ee62925b55.setIcon(icon_5a46b645312f80decd79493fee14bc32);
+        
+    
+        var popup_eef1f91c2f70ade5a171eae59008edfa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_03d118bb97c5adf10bb9e113db4f1e24 = $(`<div id="html_03d118bb97c5adf10bb9e113db4f1e24" style="width: 100.0%; height: 100.0%;">Arrivée: 6329 trajets</div>`)[0];
+                popup_eef1f91c2f70ade5a171eae59008edfa.setContent(html_03d118bb97c5adf10bb9e113db4f1e24);
+            
+        
+
+        marker_a09914cd83e82c70f56fa8ee62925b55.bindPopup(popup_eef1f91c2f70ade5a171eae59008edfa)
+        ;
+
+        
+    
+    
+            var marker_8fb2954e681841236d8aaab47e01daac = L.marker(
+                [42.3607929685826, -71.0711896233715],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_09db7b1e4ce498b7b3cfde0bfb4dbad1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_8fb2954e681841236d8aaab47e01daac.setIcon(icon_09db7b1e4ce498b7b3cfde0bfb4dbad1);
+        
+    
+        var popup_bbe27e8c8ef96df091c2fb2233def9c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8553d8f9e97cb4d8abe2d82ee98bf0a5 = $(`<div id="html_8553d8f9e97cb4d8abe2d82ee98bf0a5" style="width: 100.0%; height: 100.0%;">6002 trajets</div>`)[0];
+                popup_bbe27e8c8ef96df091c2fb2233def9c9.setContent(html_8553d8f9e97cb4d8abe2d82ee98bf0a5);
+            
+        
+
+        marker_8fb2954e681841236d8aaab47e01daac.bindPopup(popup_bbe27e8c8ef96df091c2fb2233def9c9)
+        ;
+
+        
+    
+    
+            var marker_37bcc53201060395906556f5353c8623 = L.marker(
+                [42.3436658245146, -71.0858237743377],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_2ae6b5265a6c862d6a315f3522b2da48 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_37bcc53201060395906556f5353c8623.setIcon(icon_2ae6b5265a6c862d6a315f3522b2da48);
+        
+    
+        var popup_05da88d2e2f6672f46c8dbfb02e8384f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2161f54aad62d70ed9c41a2af2477fc3 = $(`<div id="html_2161f54aad62d70ed9c41a2af2477fc3" style="width: 100.0%; height: 100.0%;">5147 trajets</div>`)[0];
+                popup_05da88d2e2f6672f46c8dbfb02e8384f.setContent(html_2161f54aad62d70ed9c41a2af2477fc3);
+            
+        
+
+        marker_37bcc53201060395906556f5353c8623.bindPopup(popup_05da88d2e2f6672f46c8dbfb02e8384f)
+        ;
+
+        
+    
+    
+            var marker_dcebcc7ebfe67d273e6ee64b38844fc0 = L.marker(
+                [42.350406, -71.108279],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_c9ad7473c1ee4afe6262a1c581e34662 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_dcebcc7ebfe67d273e6ee64b38844fc0.setIcon(icon_c9ad7473c1ee4afe6262a1c581e34662);
+        
+    
+        var popup_4a1f3345062ae9464d896eace8c0afb8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_71ad614285b055953bf3beac5c03b6df = $(`<div id="html_71ad614285b055953bf3beac5c03b6df" style="width: 100.0%; height: 100.0%;">Départ: 5075 trajets</div>`)[0];
+                popup_4a1f3345062ae9464d896eace8c0afb8.setContent(html_71ad614285b055953bf3beac5c03b6df);
+            
+        
+
+        marker_dcebcc7ebfe67d273e6ee64b38844fc0.bindPopup(popup_4a1f3345062ae9464d896eace8c0afb8)
+        ;
+
+        
+    
+    
+            var marker_487610a3b010d39d35acecc5ad56233a = L.marker(
+                [42.3516920188597, -71.1190348863601],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_301250e29090123a8d34347ac748912b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "stop", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_487610a3b010d39d35acecc5ad56233a.setIcon(icon_301250e29090123a8d34347ac748912b);
+        
+    
+        var popup_016c3c5892a074b31eb3317ffd835f3d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3eb666a124a10da34510e7535165e22e = $(`<div id="html_3eb666a124a10da34510e7535165e22e" style="width: 100.0%; height: 100.0%;">Arrivée: 5075 trajets</div>`)[0];
+                popup_016c3c5892a074b31eb3317ffd835f3d.setContent(html_3eb666a124a10da34510e7535165e22e);
+            
+        
+
+        marker_487610a3b010d39d35acecc5ad56233a.bindPopup(popup_016c3c5892a074b31eb3317ffd835f3d)
+        ;
+
+        
+    
+    
+            var marker_d022e25fe4edb002b6c37ed50a51937c = L.marker(
+                [42.3516920188597, -71.1190348863601],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_a03b0cfb339165b878f295445cf87402 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_d022e25fe4edb002b6c37ed50a51937c.setIcon(icon_a03b0cfb339165b878f295445cf87402);
+        
+    
+        var popup_9299f49ba1e008129a5985e2938f4465 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6be90e3e64288ba8b1948097b96454b4 = $(`<div id="html_6be90e3e64288ba8b1948097b96454b4" style="width: 100.0%; height: 100.0%;">Départ: 4926 trajets</div>`)[0];
+                popup_9299f49ba1e008129a5985e2938f4465.setContent(html_6be90e3e64288ba8b1948097b96454b4);
+            
+        
+
+        marker_d022e25fe4edb002b6c37ed50a51937c.bindPopup(popup_9299f49ba1e008129a5985e2938f4465)
+        ;
+
+        
+    
+    
+            var marker_e85650dc30dd39f26d1712109a8a6983 = L.marker(
+                [42.352261, -71.123831],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_bcfc12b0484304236ad764208d4229da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "stop", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e85650dc30dd39f26d1712109a8a6983.setIcon(icon_bcfc12b0484304236ad764208d4229da);
+        
+    
+        var popup_18155eed1db37e54b33ab2b6a01249da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ef5e2916552208fa5078eb69773d00a = $(`<div id="html_8ef5e2916552208fa5078eb69773d00a" style="width: 100.0%; height: 100.0%;">Arrivée: 4926 trajets</div>`)[0];
+                popup_18155eed1db37e54b33ab2b6a01249da.setContent(html_8ef5e2916552208fa5078eb69773d00a);
+            
+        
+
+        marker_e85650dc30dd39f26d1712109a8a6983.bindPopup(popup_18155eed1db37e54b33ab2b6a01249da)
+        ;
+
+        
+    
+    
+            var marker_063b7cf3e9b1b2722a6e55610aef1de2 = L.marker(
+                [42.3334, -71.02495],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_e885eb19761391418778fdd9c924df06 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_063b7cf3e9b1b2722a6e55610aef1de2.setIcon(icon_e885eb19761391418778fdd9c924df06);
+        
+    
+        var popup_62868e5ac64d45ae41ee878a0011d737 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c83bbcf3b4af6d443f951422fbcb71e2 = $(`<div id="html_c83bbcf3b4af6d443f951422fbcb71e2" style="width: 100.0%; height: 100.0%;">4643 trajets</div>`)[0];
+                popup_62868e5ac64d45ae41ee878a0011d737.setContent(html_c83bbcf3b4af6d443f951422fbcb71e2);
+            
+        
+
+        marker_063b7cf3e9b1b2722a6e55610aef1de2.bindPopup(popup_62868e5ac64d45ae41ee878a0011d737)
+        ;
+
+        
+    
+    
+            var marker_0430974acb88ff18c9fc6df635665569 = L.marker(
+                [42.349243769553, -71.0972820969254],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_10ebd95485e09f219a3bb6b940955476 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_0430974acb88ff18c9fc6df635665569.setIcon(icon_10ebd95485e09f219a3bb6b940955476);
+        
+    
+        var popup_e91fd894cc1ff20e8017980246d92d3b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bee84cd6e51eb640f2cf9459b933e3e3 = $(`<div id="html_bee84cd6e51eb640f2cf9459b933e3e3" style="width: 100.0%; height: 100.0%;">Départ: 4480 trajets</div>`)[0];
+                popup_e91fd894cc1ff20e8017980246d92d3b.setContent(html_bee84cd6e51eb640f2cf9459b933e3e3);
+            
+        
+
+        marker_0430974acb88ff18c9fc6df635665569.bindPopup(popup_e91fd894cc1ff20e8017980246d92d3b)
+        ;
+
+        
+    
+    
+            var marker_5577e8f70f06d0fadc57de97c160a599 = L.marker(
+                [42.3516920188597, -71.1190348863601],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_a71bfd1fc5ff8f086a56654d4e23a4e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "stop", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_5577e8f70f06d0fadc57de97c160a599.setIcon(icon_a71bfd1fc5ff8f086a56654d4e23a4e0);
+        
+    
+        var popup_51e4e6eb99b70748979bc25a031dd78e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47b81bda1e9772c7dadc94d211dc24e8 = $(`<div id="html_47b81bda1e9772c7dadc94d211dc24e8" style="width: 100.0%; height: 100.0%;">Arrivée: 4480 trajets</div>`)[0];
+                popup_51e4e6eb99b70748979bc25a031dd78e.setContent(html_47b81bda1e9772c7dadc94d211dc24e8);
+            
+        
+
+        marker_5577e8f70f06d0fadc57de97c160a599.bindPopup(popup_51e4e6eb99b70748979bc25a031dd78e)
+        ;
+
+        
+    
+    
+            var marker_dae291e08d51fd3bdbc04b532f982eb7 = L.marker(
+                [42.350406, -71.108279],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_a41b99a9c34a6bc28f02a65ce10942b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_dae291e08d51fd3bdbc04b532f982eb7.setIcon(icon_a41b99a9c34a6bc28f02a65ce10942b8);
+        
+    
+        var popup_4b905f05896bba46c2bc440c1e78785a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d22a77c81f49a7268e1455f68c646dc6 = $(`<div id="html_d22a77c81f49a7268e1455f68c646dc6" style="width: 100.0%; height: 100.0%;">Départ: 4453 trajets</div>`)[0];
+                popup_4b905f05896bba46c2bc440c1e78785a.setContent(html_d22a77c81f49a7268e1455f68c646dc6);
+            
+        
+
+        marker_dae291e08d51fd3bdbc04b532f982eb7.bindPopup(popup_4b905f05896bba46c2bc440c1e78785a)
+        ;
+
+        
+    
+    
+            var marker_fdc7521d3d26521bcefc0d254e79c19f = L.marker(
+                [42.352261, -71.123831],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_f33e17e0439f722d4ba750f0dcafe310 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "stop", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_fdc7521d3d26521bcefc0d254e79c19f.setIcon(icon_f33e17e0439f722d4ba750f0dcafe310);
+        
+    
+        var popup_3050e6805847d3dde806779fc9c234c2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e80bcf7cf7b7eb29e7b8b06d8877d1d = $(`<div id="html_6e80bcf7cf7b7eb29e7b8b06d8877d1d" style="width: 100.0%; height: 100.0%;">Arrivée: 4453 trajets</div>`)[0];
+                popup_3050e6805847d3dde806779fc9c234c2.setContent(html_6e80bcf7cf7b7eb29e7b8b06d8877d1d);
+            
+        
+
+        marker_fdc7521d3d26521bcefc0d254e79c19f.bindPopup(popup_3050e6805847d3dde806779fc9c234c2)
+        ;
+
+        
+    
+    
+            var marker_a05c2cd7bd1b6c7b02e000e9fd94e095 = L.marker(
+                [42.3516920188597, -71.1190348863601],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_817acbda6bfff4862c96cfe16fd3e784 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_a05c2cd7bd1b6c7b02e000e9fd94e095.setIcon(icon_817acbda6bfff4862c96cfe16fd3e784);
+        
+    
+        var popup_e45ac9c95e44f6165d56e15770f6fff2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f980e61c21c205ccc58e5eddd7324a8d = $(`<div id="html_f980e61c21c205ccc58e5eddd7324a8d" style="width: 100.0%; height: 100.0%;">Départ: 4322 trajets</div>`)[0];
+                popup_e45ac9c95e44f6165d56e15770f6fff2.setContent(html_f980e61c21c205ccc58e5eddd7324a8d);
+            
+        
+
+        marker_a05c2cd7bd1b6c7b02e000e9fd94e095.bindPopup(popup_e45ac9c95e44f6165d56e15770f6fff2)
+        ;
+
+        
+    
+    
+            var marker_8ff30f3a122284246054ef8908eea0c7 = L.marker(
+                [42.3496094533305, -71.1039152369812],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_5e84b39a45fde76cd625d9b60a7298a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "stop", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8ff30f3a122284246054ef8908eea0c7.setIcon(icon_5e84b39a45fde76cd625d9b60a7298a9);
+        
+    
+        var popup_fbda45553914067264fa657ce5b5b0b2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9cda78ec36ff931ba76f43a659ab8b3a = $(`<div id="html_9cda78ec36ff931ba76f43a659ab8b3a" style="width: 100.0%; height: 100.0%;">Arrivée: 4322 trajets</div>`)[0];
+                popup_fbda45553914067264fa657ce5b5b0b2.setContent(html_9cda78ec36ff931ba76f43a659ab8b3a);
+            
+        
+
+        marker_8ff30f3a122284246054ef8908eea0c7.bindPopup(popup_fbda45553914067264fa657ce5b5b0b2)
+        ;
+
+        
+    
+    
+            var marker_0bf5376557d5f2014d105c0e8f0d4b9c = L.marker(
+                [42.3508268066909, -71.0898108780384],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_464855a3fc02811d93d78529e921499d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_0bf5376557d5f2014d105c0e8f0d4b9c.setIcon(icon_464855a3fc02811d93d78529e921499d);
+        
+    
+        var popup_150a7ddb9c5e35ab88ebbb8bfcaeb4d7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ffea9cbae811278ce275a62b55895a37 = $(`<div id="html_ffea9cbae811278ce275a62b55895a37" style="width: 100.0%; height: 100.0%;">4285 trajets</div>`)[0];
+                popup_150a7ddb9c5e35ab88ebbb8bfcaeb4d7.setContent(html_ffea9cbae811278ce275a62b55895a37);
+            
+        
+
+        marker_0bf5376557d5f2014d105c0e8f0d4b9c.bindPopup(popup_150a7ddb9c5e35ab88ebbb8bfcaeb4d7)
+        ;
+
+        
+    
+    
+            var marker_7c8054879453150eb4fff017540f4270 = L.marker(
+                [42.363871, -71.050877],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_a4604e66267913a35647590b4bbb19e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_7c8054879453150eb4fff017540f4270.setIcon(icon_a4604e66267913a35647590b4bbb19e7);
+        
+    
+        var popup_29409f244ca35a94028570d6bd60f3ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c9d426183d1fdc1992910448872ce522 = $(`<div id="html_c9d426183d1fdc1992910448872ce522" style="width: 100.0%; height: 100.0%;">3997 trajets</div>`)[0];
+                popup_29409f244ca35a94028570d6bd60f3ff.setContent(html_c9d426183d1fdc1992910448872ce522);
+            
+        
+
+        marker_7c8054879453150eb4fff017540f4270.bindPopup(popup_29409f244ca35a94028570d6bd60f3ff)
+        ;
+
+        
+    
+    
+            var marker_3e864ce8b012b3da466a21f4a5928d6c = L.marker(
+                [42.3531780918625, -71.0481735692337],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_1420ce1364d6ae628aadfb5c96b4b965 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_3e864ce8b012b3da466a21f4a5928d6c.setIcon(icon_1420ce1364d6ae628aadfb5c96b4b965);
+        
+    
+        var popup_a0b078adb25e712b253da2107cbd951a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf7d8dc6da95946e73abfab1c03af31b = $(`<div id="html_cf7d8dc6da95946e73abfab1c03af31b" style="width: 100.0%; height: 100.0%;">Départ: 3833 trajets</div>`)[0];
+                popup_a0b078adb25e712b253da2107cbd951a.setContent(html_cf7d8dc6da95946e73abfab1c03af31b);
+            
+        
+
+        marker_3e864ce8b012b3da466a21f4a5928d6c.bindPopup(popup_a0b078adb25e712b253da2107cbd951a)
+        ;
+
+        
+    
+    
+            var marker_077d4da1ff4d7a056d13cdcd56e2a99f = L.marker(
+                [42.363871, -71.050877],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_2455e531f3141557dc033effc902dfa8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "stop", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_077d4da1ff4d7a056d13cdcd56e2a99f.setIcon(icon_2455e531f3141557dc033effc902dfa8);
+        
+    
+        var popup_6bf63de934569ed74595d1d4e051443f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34ad7e9dc2aa06a1b3531ac92576dc99 = $(`<div id="html_34ad7e9dc2aa06a1b3531ac92576dc99" style="width: 100.0%; height: 100.0%;">Arrivée: 3833 trajets</div>`)[0];
+                popup_6bf63de934569ed74595d1d4e051443f.setContent(html_34ad7e9dc2aa06a1b3531ac92576dc99);
+            
+        
+
+        marker_077d4da1ff4d7a056d13cdcd56e2a99f.bindPopup(popup_6bf63de934569ed74595d1d4e051443f)
+        ;
+
+        
+    
+    
+            var marker_3ac87a7ac9ec71575dc1cb81c5d53547 = L.marker(
+                [42.34949599514, -71.1005759239196],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_e959c52c2b73476449aec8b9a8c47328 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_3ac87a7ac9ec71575dc1cb81c5d53547.setIcon(icon_e959c52c2b73476449aec8b9a8c47328);
+        
+    
+        var popup_717c1778cb88dcd860cd02ee377cfa83 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_81a4b35c36a2dbad67f9de2c08e3e895 = $(`<div id="html_81a4b35c36a2dbad67f9de2c08e3e895" style="width: 100.0%; height: 100.0%;">Départ: 3799 trajets</div>`)[0];
+                popup_717c1778cb88dcd860cd02ee377cfa83.setContent(html_81a4b35c36a2dbad67f9de2c08e3e895);
+            
+        
+
+        marker_3ac87a7ac9ec71575dc1cb81c5d53547.bindPopup(popup_717c1778cb88dcd860cd02ee377cfa83)
+        ;
+
+        
+    
+    
+            var marker_d46a129dd945665741f74ef82600ff5e = L.marker(
+                [42.3516920188597, -71.1190348863601],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_b26ba6585e50711675afa7b1bdd78d36 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "stop", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d46a129dd945665741f74ef82600ff5e.setIcon(icon_b26ba6585e50711675afa7b1bdd78d36);
+        
+    
+        var popup_eb7033e368b95bb81ceca2905372feed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_37ae91733f4bbda2c6a339fe8be92e72 = $(`<div id="html_37ae91733f4bbda2c6a339fe8be92e72" style="width: 100.0%; height: 100.0%;">Arrivée: 3799 trajets</div>`)[0];
+                popup_eb7033e368b95bb81ceca2905372feed.setContent(html_37ae91733f4bbda2c6a339fe8be92e72);
+            
+        
+
+        marker_d46a129dd945665741f74ef82600ff5e.bindPopup(popup_eb7033e368b95bb81ceca2905372feed)
+        ;
+
+        
+    
+    
+            var marker_9ae0e4ad9dca6a70af2238b6774a79e0 = L.marker(
+                [42.3516920188597, -71.1190348863601],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_bfcba13c0eadb0d4d66d405c68ff3ce4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_9ae0e4ad9dca6a70af2238b6774a79e0.setIcon(icon_bfcba13c0eadb0d4d66d405c68ff3ce4);
+        
+    
+        var popup_b9c4be12bb7096c5e884cf0a56ec0713 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_10e112dfec51900c30afead65aaa3596 = $(`<div id="html_10e112dfec51900c30afead65aaa3596" style="width: 100.0%; height: 100.0%;">Départ: 3797 trajets</div>`)[0];
+                popup_b9c4be12bb7096c5e884cf0a56ec0713.setContent(html_10e112dfec51900c30afead65aaa3596);
+            
+        
+
+        marker_9ae0e4ad9dca6a70af2238b6774a79e0.bindPopup(popup_b9c4be12bb7096c5e884cf0a56ec0713)
+        ;
+
+        
+    
+    
+            var marker_1d56f5abad0e821e358af721d1ffd75e = L.marker(
+                [42.350406, -71.108279],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_55187da568d7325f6fc31682f21f2ada = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "stop", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1d56f5abad0e821e358af721d1ffd75e.setIcon(icon_55187da568d7325f6fc31682f21f2ada);
+        
+    
+        var popup_62a4572a81d314302562cab1d5c2b487 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_88c07fa008cdc94ebee089ec33b2231b = $(`<div id="html_88c07fa008cdc94ebee089ec33b2231b" style="width: 100.0%; height: 100.0%;">Arrivée: 3797 trajets</div>`)[0];
+                popup_62a4572a81d314302562cab1d5c2b487.setContent(html_88c07fa008cdc94ebee089ec33b2231b);
+            
+        
+
+        marker_1d56f5abad0e821e358af721d1ffd75e.bindPopup(popup_62a4572a81d314302562cab1d5c2b487)
+        ;
+
+        
+    
+    
+            var marker_f62262a65eed4448ca59bb942e1bca35 = L.marker(
+                [42.349243769553, -71.0972820969254],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_39e4fb8e07b92254055ec202ef9722c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f62262a65eed4448ca59bb942e1bca35.setIcon(icon_39e4fb8e07b92254055ec202ef9722c7);
+        
+    
+        var popup_22e53fcfdef35c8d47c44f86d04b9476 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a32fdf08e4106c2f4cf8ef9c04fba807 = $(`<div id="html_a32fdf08e4106c2f4cf8ef9c04fba807" style="width: 100.0%; height: 100.0%;">Départ: 3745 trajets</div>`)[0];
+                popup_22e53fcfdef35c8d47c44f86d04b9476.setContent(html_a32fdf08e4106c2f4cf8ef9c04fba807);
+            
+        
+
+        marker_f62262a65eed4448ca59bb942e1bca35.bindPopup(popup_22e53fcfdef35c8d47c44f86d04b9476)
+        ;
+
+        
+    
+    
+            var marker_1f57d7bc9c9284126e9d0537ac5308dd = L.marker(
+                [42.350406, -71.108279],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_db3b2949c5053d0c7f1a8f2b96e5b12a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "stop", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1f57d7bc9c9284126e9d0537ac5308dd.setIcon(icon_db3b2949c5053d0c7f1a8f2b96e5b12a);
+        
+    
+        var popup_bf4f0d63afc937bf8c50edddbc23d40c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2935797143fea328e130f43a4a76fbf4 = $(`<div id="html_2935797143fea328e130f43a4a76fbf4" style="width: 100.0%; height: 100.0%;">Arrivée: 3745 trajets</div>`)[0];
+                popup_bf4f0d63afc937bf8c50edddbc23d40c.setContent(html_2935797143fea328e130f43a4a76fbf4);
+            
+        
+
+        marker_1f57d7bc9c9284126e9d0537ac5308dd.bindPopup(popup_bf4f0d63afc937bf8c50edddbc23d40c)
+        ;
+
+        
+    
+    
+            var marker_dca90a4ebaa2670dbbda28b3c8876f99 = L.marker(
+                [42.3516920188597, -71.1190348863601],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_a62c22a4546a80842f8d11043d2c8c2b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_dca90a4ebaa2670dbbda28b3c8876f99.setIcon(icon_a62c22a4546a80842f8d11043d2c8c2b);
+        
+    
+        var popup_ab1d9f72b669054c15cfa79f4b2c84af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_16eb66934b2d35ebd798abd6b1322591 = $(`<div id="html_16eb66934b2d35ebd798abd6b1322591" style="width: 100.0%; height: 100.0%;">Départ: 3694 trajets</div>`)[0];
+                popup_ab1d9f72b669054c15cfa79f4b2c84af.setContent(html_16eb66934b2d35ebd798abd6b1322591);
+            
+        
+
+        marker_dca90a4ebaa2670dbbda28b3c8876f99.bindPopup(popup_ab1d9f72b669054c15cfa79f4b2c84af)
+        ;
+
+        
+    
+    
+            var marker_7999451d7d146c939cbba4a26286d4fd = L.marker(
+                [42.349243769553, -71.0972820969254],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_96e82e51486dff03baf27d27e72a3321 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "stop", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_7999451d7d146c939cbba4a26286d4fd.setIcon(icon_96e82e51486dff03baf27d27e72a3321);
+        
+    
+        var popup_39ec90bb3f0ff3c727526ca9871397ef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e94709d6780b6f6ad3067c44e50cebff = $(`<div id="html_e94709d6780b6f6ad3067c44e50cebff" style="width: 100.0%; height: 100.0%;">Arrivée: 3694 trajets</div>`)[0];
+                popup_39ec90bb3f0ff3c727526ca9871397ef.setContent(html_e94709d6780b6f6ad3067c44e50cebff);
+            
+        
+
+        marker_7999451d7d146c939cbba4a26286d4fd.bindPopup(popup_39ec90bb3f0ff3c727526ca9871397ef)
+        ;
+
+        
+    
+    
+            var marker_f73ce3ebae69ea6b1db2f7663ff84b3c = L.marker(
+                [42.3531780918625, -71.0481735692337],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_fadff81a397dc4775691ba6625b292fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f73ce3ebae69ea6b1db2f7663ff84b3c.setIcon(icon_fadff81a397dc4775691ba6625b292fd);
+        
+    
+        var popup_d0db4e1bb5f1d917dacd2d038c08c029 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df0822d57dd85a74d0a7004ce7275248 = $(`<div id="html_df0822d57dd85a74d0a7004ce7275248" style="width: 100.0%; height: 100.0%;">Départ: 3652 trajets</div>`)[0];
+                popup_d0db4e1bb5f1d917dacd2d038c08c029.setContent(html_df0822d57dd85a74d0a7004ce7275248);
+            
+        
+
+        marker_f73ce3ebae69ea6b1db2f7663ff84b3c.bindPopup(popup_d0db4e1bb5f1d917dacd2d038c08c029)
+        ;
+
+        
+    
+    
+            var marker_217104190f41544ca3776c57bcb39ab1 = L.marker(
+                [42.362811, -71.056067],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_23e9faa04030541340a950d7843442ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "stop", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_217104190f41544ca3776c57bcb39ab1.setIcon(icon_23e9faa04030541340a950d7843442ca);
+        
+    
+        var popup_f792a4974cd9f0cdab462a2de6781f3b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62d5412afbae38d9e6e95a64ff293f41 = $(`<div id="html_62d5412afbae38d9e6e95a64ff293f41" style="width: 100.0%; height: 100.0%;">Arrivée: 3652 trajets</div>`)[0];
+                popup_f792a4974cd9f0cdab462a2de6781f3b.setContent(html_62d5412afbae38d9e6e95a64ff293f41);
+            
+        
+
+        marker_217104190f41544ca3776c57bcb39ab1.bindPopup(popup_f792a4974cd9f0cdab462a2de6781f3b)
+        ;
+
+        
+    
+    
+            var marker_eec2409b6659255aa3447fdc959dba82 = L.marker(
+                [42.363871, -71.050877],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_6da6b904c5bf71b93fe7be063d98a8eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_eec2409b6659255aa3447fdc959dba82.setIcon(icon_6da6b904c5bf71b93fe7be063d98a8eb);
+        
+    
+        var popup_82812ac1b3334c9066e088125a75b9d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e72ca946c1fb1be99ed8b3fb9decba8 = $(`<div id="html_7e72ca946c1fb1be99ed8b3fb9decba8" style="width: 100.0%; height: 100.0%;">Départ: 3456 trajets</div>`)[0];
+                popup_82812ac1b3334c9066e088125a75b9d4.setContent(html_7e72ca946c1fb1be99ed8b3fb9decba8);
+            
+        
+
+        marker_eec2409b6659255aa3447fdc959dba82.bindPopup(popup_82812ac1b3334c9066e088125a75b9d4)
+        ;
+
+        
+    
+    
+            var marker_2fb2ddc30489efb050a73d0f705fed9e = L.marker(
+                [42.3531780918625, -71.0481735692337],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_6b92df9c6c04fd422f6994f66b7f7aa3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "stop", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2fb2ddc30489efb050a73d0f705fed9e.setIcon(icon_6b92df9c6c04fd422f6994f66b7f7aa3);
+        
+    
+        var popup_ab7ef547fa3b607f2c040758d0395a06 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f93eec98f1f509760488b7c13831fff5 = $(`<div id="html_f93eec98f1f509760488b7c13831fff5" style="width: 100.0%; height: 100.0%;">Arrivée: 3456 trajets</div>`)[0];
+                popup_ab7ef547fa3b607f2c040758d0395a06.setContent(html_f93eec98f1f509760488b7c13831fff5);
+            
+        
+
+        marker_2fb2ddc30489efb050a73d0f705fed9e.bindPopup(popup_ab7ef547fa3b607f2c040758d0395a06)
+        ;
+
+        
+    
+    
+            var marker_c3d46cc55544c5000bf136e4322f63fa = L.marker(
+                [42.352175, -71.055547],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_86bfdd2cf969e687661f40c0befecb54 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_c3d46cc55544c5000bf136e4322f63fa.setIcon(icon_86bfdd2cf969e687661f40c0befecb54);
+        
+    
+        var popup_81cc837c8e8ac403cc9b8d49a7619efe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5bbc26e0c3476553a5dedc547a8be0a5 = $(`<div id="html_5bbc26e0c3476553a5dedc547a8be0a5" style="width: 100.0%; height: 100.0%;">Départ: 3398 trajets</div>`)[0];
+                popup_81cc837c8e8ac403cc9b8d49a7619efe.setContent(html_5bbc26e0c3476553a5dedc547a8be0a5);
+            
+        
+
+        marker_c3d46cc55544c5000bf136e4322f63fa.bindPopup(popup_81cc837c8e8ac403cc9b8d49a7619efe)
+        ;
+
+        
+    
+    
+            var marker_e556f8f3ef23c2d526b1f3629ee8e2b4 = L.marker(
+                [42.363871, -71.050877],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_728fe247085ef4f6efa483a2a1f81d06 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "stop", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e556f8f3ef23c2d526b1f3629ee8e2b4.setIcon(icon_728fe247085ef4f6efa483a2a1f81d06);
+        
+    
+        var popup_a8b37b4a820e7b4852e42f77e1bf566e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf4577e0ba2dc3e5de90eb99c24dbe43 = $(`<div id="html_cf4577e0ba2dc3e5de90eb99c24dbe43" style="width: 100.0%; height: 100.0%;">Arrivée: 3398 trajets</div>`)[0];
+                popup_a8b37b4a820e7b4852e42f77e1bf566e.setContent(html_cf4577e0ba2dc3e5de90eb99c24dbe43);
+            
+        
+
+        marker_e556f8f3ef23c2d526b1f3629ee8e2b4.bindPopup(popup_a8b37b4a820e7b4852e42f77e1bf566e)
+        ;
+
+        
+    
+    
+            var marker_25aba0b96e98ac9259842ee12d259774 = L.marker(
+                [42.352261, -71.123831],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_2d2e5f4acc446c01942e73daa56fbb2c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_25aba0b96e98ac9259842ee12d259774.setIcon(icon_2d2e5f4acc446c01942e73daa56fbb2c);
+        
+    
+        var popup_bac227b5671dae9bb6cc45d1022452d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_84e017fd933fbbeffc50fad24017e61e = $(`<div id="html_84e017fd933fbbeffc50fad24017e61e" style="width: 100.0%; height: 100.0%;">Départ: 3392 trajets</div>`)[0];
+                popup_bac227b5671dae9bb6cc45d1022452d9.setContent(html_84e017fd933fbbeffc50fad24017e61e);
+            
+        
+
+        marker_25aba0b96e98ac9259842ee12d259774.bindPopup(popup_bac227b5671dae9bb6cc45d1022452d9)
+        ;
+
+        
+    
+    
+            var marker_d8dc7c405586f7d0df905898a57030df = L.marker(
+                [42.3516920188597, -71.1190348863601],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_c06b83e80362088942c0c37c2d8660c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "stop", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d8dc7c405586f7d0df905898a57030df.setIcon(icon_c06b83e80362088942c0c37c2d8660c9);
+        
+    
+        var popup_b1de35f38089d2ed77977f27d8281aa1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d3731dc9d5a01694866f3834663e611e = $(`<div id="html_d3731dc9d5a01694866f3834663e611e" style="width: 100.0%; height: 100.0%;">Arrivée: 3392 trajets</div>`)[0];
+                popup_b1de35f38089d2ed77977f27d8281aa1.setContent(html_d3731dc9d5a01694866f3834663e611e);
+            
+        
+
+        marker_d8dc7c405586f7d0df905898a57030df.bindPopup(popup_b1de35f38089d2ed77977f27d8281aa1)
+        ;
+
+        
+    
+    
+            var marker_2a81a973aa25d7d207d94d6a4daaeae7 = L.marker(
+                [42.3496094533305, -71.1039152369812],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_872429d87795944cabfd83131e94d385 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_2a81a973aa25d7d207d94d6a4daaeae7.setIcon(icon_872429d87795944cabfd83131e94d385);
+        
+    
+        var popup_fe8968644e1504ddbd6bd7471572d037 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ed3fb2904b80e13a6e29ec8df7bb90f = $(`<div id="html_1ed3fb2904b80e13a6e29ec8df7bb90f" style="width: 100.0%; height: 100.0%;">Départ: 3378 trajets</div>`)[0];
+                popup_fe8968644e1504ddbd6bd7471572d037.setContent(html_1ed3fb2904b80e13a6e29ec8df7bb90f);
+            
+        
+
+        marker_2a81a973aa25d7d207d94d6a4daaeae7.bindPopup(popup_fe8968644e1504ddbd6bd7471572d037)
+        ;
+
+        
+    
+    
+            var marker_36e4892f7d6df7242136040128a048f3 = L.marker(
+                [42.3516920188597, -71.1190348863601],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_a16a08340783581cfd1e8aeb8a57c9db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "stop", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_36e4892f7d6df7242136040128a048f3.setIcon(icon_a16a08340783581cfd1e8aeb8a57c9db);
+        
+    
+        var popup_b6448a281920d4761d5af46256e1e270 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_756381e6a09a57096f212038a3f5c4c7 = $(`<div id="html_756381e6a09a57096f212038a3f5c4c7" style="width: 100.0%; height: 100.0%;">Arrivée: 3378 trajets</div>`)[0];
+                popup_b6448a281920d4761d5af46256e1e270.setContent(html_756381e6a09a57096f212038a3f5c4c7);
+            
+        
+
+        marker_36e4892f7d6df7242136040128a048f3.bindPopup(popup_b6448a281920d4761d5af46256e1e270)
+        ;
+
+        
+    
+    
+            var marker_91bd6c5b014861689d64948bdae767fa = L.marker(
+                [42.352261, -71.123831],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_91c8ccf33c7d7817f2414094462ea929 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_91bd6c5b014861689d64948bdae767fa.setIcon(icon_91c8ccf33c7d7817f2414094462ea929);
+        
+    
+        var popup_3e2dabe22fb940890c0119c2c5fda7f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1424b5355be8fd5a432d107c4650ef32 = $(`<div id="html_1424b5355be8fd5a432d107c4650ef32" style="width: 100.0%; height: 100.0%;">Départ: 3371 trajets</div>`)[0];
+                popup_3e2dabe22fb940890c0119c2c5fda7f1.setContent(html_1424b5355be8fd5a432d107c4650ef32);
+            
+        
+
+        marker_91bd6c5b014861689d64948bdae767fa.bindPopup(popup_3e2dabe22fb940890c0119c2c5fda7f1)
+        ;
+
+        
+    
+    
+            var marker_0ff120d6bb75996ecb130c1f7bd266de = L.marker(
+                [42.350406, -71.108279],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_72c951354cd78c56e9bd925898d04458 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "stop", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0ff120d6bb75996ecb130c1f7bd266de.setIcon(icon_72c951354cd78c56e9bd925898d04458);
+        
+    
+        var popup_c23ded390c80816132310d3c8ea057a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_46b43aacbee12fcebfa676a4ac1005a7 = $(`<div id="html_46b43aacbee12fcebfa676a4ac1005a7" style="width: 100.0%; height: 100.0%;">Arrivée: 3371 trajets</div>`)[0];
+                popup_c23ded390c80816132310d3c8ea057a2.setContent(html_46b43aacbee12fcebfa676a4ac1005a7);
+            
+        
+
+        marker_0ff120d6bb75996ecb130c1f7bd266de.bindPopup(popup_c23ded390c80816132310d3c8ea057a2)
+        ;
+
+        
+    
+    
+            var marker_b208476450155c68766456441eeac570 = L.marker(
+                [42.3446506288783, -71.0973250122697],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_b85e5eb84287d73a6d559ab4902c7bd0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_b208476450155c68766456441eeac570.setIcon(icon_b85e5eb84287d73a6d559ab4902c7bd0);
+        
+    
+        var popup_af7182158bf6fb13eab9de7c86b79bf3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_adc6b227324549457dc0a47db5a26d52 = $(`<div id="html_adc6b227324549457dc0a47db5a26d52" style="width: 100.0%; height: 100.0%;">3307 trajets</div>`)[0];
+                popup_af7182158bf6fb13eab9de7c86b79bf3.setContent(html_adc6b227324549457dc0a47db5a26d52);
+            
+        
+
+        marker_b208476450155c68766456441eeac570.bindPopup(popup_af7182158bf6fb13eab9de7c86b79bf3)
+        ;
+
+        
+    
+    
+            var marker_c26ebb7a0d5082df73c4411c259acd83 = L.marker(
+                [42.3516920188597, -71.1190348863601],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_36cde60ff7383e6de794fe7971c8ba52 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_c26ebb7a0d5082df73c4411c259acd83.setIcon(icon_36cde60ff7383e6de794fe7971c8ba52);
+        
+    
+        var popup_76377e0cbaaaf6db5c665761d3704b98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_814b0646faef073c42541bf9d0d496d1 = $(`<div id="html_814b0646faef073c42541bf9d0d496d1" style="width: 100.0%; height: 100.0%;">Départ: 3168 trajets</div>`)[0];
+                popup_76377e0cbaaaf6db5c665761d3704b98.setContent(html_814b0646faef073c42541bf9d0d496d1);
+            
+        
+
+        marker_c26ebb7a0d5082df73c4411c259acd83.bindPopup(popup_76377e0cbaaaf6db5c665761d3704b98)
+        ;
+
+        
+    
+    
+            var marker_b6b2a85af6d3e1b31f5257561717eae6 = L.marker(
+                [42.34949599514, -71.1005759239196],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_c162a17a481f182a20e307fa261b3f23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "stop", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b6b2a85af6d3e1b31f5257561717eae6.setIcon(icon_c162a17a481f182a20e307fa261b3f23);
+        
+    
+        var popup_12723a145cb470087f2171d6d79fa34f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aefca71dd45e64b2de7a5f54c9b5da0c = $(`<div id="html_aefca71dd45e64b2de7a5f54c9b5da0c" style="width: 100.0%; height: 100.0%;">Arrivée: 3168 trajets</div>`)[0];
+                popup_12723a145cb470087f2171d6d79fa34f.setContent(html_aefca71dd45e64b2de7a5f54c9b5da0c);
+            
+        
+
+        marker_b6b2a85af6d3e1b31f5257561717eae6.bindPopup(popup_12723a145cb470087f2171d6d79fa34f)
+        ;
+
+        
+    
+    
+            var marker_2414ca3afd7fbd46d87058d3ca3b4038 = L.marker(
+                [42.349243769553, -71.0972820969254],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_0d09587d051f33b63e6933d0aa2ba7ce = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_2414ca3afd7fbd46d87058d3ca3b4038.setIcon(icon_0d09587d051f33b63e6933d0aa2ba7ce);
+        
+    
+        var popup_7cf5ddc91dc84ee936ef6c0e971fa593 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b50650bc3578fe92b57abfde80a0045 = $(`<div id="html_1b50650bc3578fe92b57abfde80a0045" style="width: 100.0%; height: 100.0%;">3126 trajets</div>`)[0];
+                popup_7cf5ddc91dc84ee936ef6c0e971fa593.setContent(html_1b50650bc3578fe92b57abfde80a0045);
+            
+        
+
+        marker_2414ca3afd7fbd46d87058d3ca3b4038.bindPopup(popup_7cf5ddc91dc84ee936ef6c0e971fa593)
+        ;
+
+        
+    
+    
+            var marker_90d7d367bb10d556239b3308067c376c = L.marker(
+                [42.3385146017859, -71.0740408301353],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_a339974283c9cf375c03b179d73888cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_90d7d367bb10d556239b3308067c376c.setIcon(icon_a339974283c9cf375c03b179d73888cb);
+        
+    
+        var popup_e3b6361176048cab2bd16e171d23c895 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1893c4a3b0b32e837df8326d2e601e30 = $(`<div id="html_1893c4a3b0b32e837df8326d2e601e30" style="width: 100.0%; height: 100.0%;">Départ: 3089 trajets</div>`)[0];
+                popup_e3b6361176048cab2bd16e171d23c895.setContent(html_1893c4a3b0b32e837df8326d2e601e30);
+            
+        
+
+        marker_90d7d367bb10d556239b3308067c376c.bindPopup(popup_e3b6361176048cab2bd16e171d23c895)
+        ;
+
+        
+    
+    
+            var marker_15e32b48bc71b2114dc0de194eaf16d9 = L.marker(
+                [42.3480741231743, -71.0765701532363],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_a3e55e0e78268265f88eb6534c6c1f22 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "stop", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_15e32b48bc71b2114dc0de194eaf16d9.setIcon(icon_a3e55e0e78268265f88eb6534c6c1f22);
+        
+    
+        var popup_6d64f269c63482cd0b73499ecae61e9c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_497f7e095e4c34ad66db67be95ce90b1 = $(`<div id="html_497f7e095e4c34ad66db67be95ce90b1" style="width: 100.0%; height: 100.0%;">Arrivée: 3089 trajets</div>`)[0];
+                popup_6d64f269c63482cd0b73499ecae61e9c.setContent(html_497f7e095e4c34ad66db67be95ce90b1);
+            
+        
+
+        marker_15e32b48bc71b2114dc0de194eaf16d9.bindPopup(popup_6d64f269c63482cd0b73499ecae61e9c)
+        ;
+
+        
+    
+    
+            var marker_966d5c0c5f61810341368c8cccc7de8e = L.marker(
+                [42.356052, -71.069849],
+                {}
+            ).addTo(map_343554ac4ebe5323a2bed608fa9df4ec);
+        
+    
+            var icon_9bde2c283115ed88a9eaa78d2e1950d8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "play", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_966d5c0c5f61810341368c8cccc7de8e.setIcon(icon_9bde2c283115ed88a9eaa78d2e1950d8);
+        
+    
+        var popup_e998b59ed798bac2ccef316b3669eb55 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_333930730173dcd026f8850dd6ec7b88 = $(`<div id="html_333930730173dcd026f8850dd6ec7b88" style="width: 100.0%; height: 100.0%;">2983 trajets</div>`)[0];
+                popup_e998b59ed798bac2ccef316b3669eb55.setContent(html_333930730173dcd026f8850dd6ec7b88);
+            
+        
+
+        marker_966d5c0c5f61810341368c8cccc7de8e.bindPopup(popup_e998b59ed798bac2ccef316b3669eb55)
+        ;
+
+        
+    
+</script>
+</html>
